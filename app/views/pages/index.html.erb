@@ -1,48 +1,45 @@
-<div class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://codeandomexico.org"><%= image_tag('logo.png')%></a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right quitar-respo">
-                <li class="facebook">
-                    <a href="https://www.facebook.com/CodeandoMexico/" target="_blank">
-                        <%= image_tag('face.png') %>
-                    </a>
-                    <span>Facebook</span>
-                </li>
-                <li class="twitter">
-                    <a href="https://twitter.com/codeandomexico" target="_blank">
-                        <%= image_tag('twitter.png') %>
-                    </a>
-                    <span>Twitter</span>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/CodeandoMexico" target="_blank">
-                        <%= image_tag('github.png') %>
-                    </a>
-                    <span>Github</span>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right aparecer-respo">
-                <li>Proyectos abiertos</li>
-                <li>Participa</li>
-                <li>Comunidad</li>
-                <li>Nuestro propósito</li>
-                <li>Newsletter</li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div class="wide">
-    <h1 class="title">Tecnología de hoy para la ciudadanía de mañana</h1>
-    <h2 class="sub-title">Codeando México es una comunidad que busca desarrollar tecnología para construir un mejor país.</h2>
+    <div class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-brand">
+                <a href="https://codeandomexico.org"><%= image_tag('logo.png') %></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right quitar-respo">
+                    <li class="navbar-button navbar-social-button">
+                        <a href="https://www.facebook.com/CodeandoMexico/" target="_blank">
+                            <%= image_tag('face.png', class: 'navbar-button-icon') %>
+                            <div class='navbar-button-label'>Facebook</div>
+                        </a>
+                    </li>
+                    <li class="navbar-button navbar-social-button">
+                        <a href="https://twitter.com/codeandomexico" target="_blank">
+                            <%= image_tag('twitter.png', class: 'navbar-button-icon') %>
+                            <div class='navbar-button-label'>Twitter</div>
+                        </a>
+                    </li>
+                    <li class="navbar-button navbar-social-button">
+                        <a href="https://github.com/CodeandoMexico" target="_blank">
+                            <%= image_tag('github.png', class: 'navbar-button-icon') %>
+                            <div class='navbar-button-label'>Github</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right aparecer-respo">
+                    <li class='navbar-button'><a class='navbar-button-label' href='#proyectos-codeando'>Proyectos abiertos</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#participa'>Participa</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#hackers'>Comunidad</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#proposito'>Nuestro propósito</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#newsletter'>Newsletter</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+    </div><!--/.navbar -->
+    <div class="hero-text container">
+        <h1 class="title">Tecnología de hoy para la ciudadanía de mañana</h1>
+        <h2 class="sub-title">Codeando México es una comunidad que busca desarrollar tecnología para construir un mejor
+            país.</h2>
+    </div>
 </div>
 <!-- /.end Page Header -->
 <div class="clearfix"></div>
@@ -54,9 +51,21 @@
             <div class="col-xs-12 container-texto">
                 <div class="col-md-4"><p class="parrafo">¿QUÉ HACEMOS A TRAVÉS DE LA TECNOLOGÍA?</p></div>
                 <div class="col-md-8">
-                    <div class="col-xs-4 task"><div><hr></div><p>RESOLVER PROBLEMAS PÚBLICOS Y SOCIALES</p></div>
-                    <div class="col-xs-4 task"><div><hr></div><p>GENERAR NUEVAS FORMAS DE PARTICIPACIÓN CÍVICA</p></div>
-                    <div class="col-xs-4 task"><div><hr></div><p>REFORMULAR LA RELACIÓN ENTRE GOBIERNO Y CIUDADANÍA</p></div>
+                    <div class="col-xs-4 task">
+                        <div>
+                            <hr>
+                        </div>
+                        <p>RESOLVER PROBLEMAS PÚBLICOS Y SOCIALES</p></div>
+                    <div class="col-xs-4 task">
+                        <div>
+                            <hr>
+                        </div>
+                        <p>GENERAR NUEVAS FORMAS DE PARTICIPACIÓN CÍVICA</p></div>
+                    <div class="col-xs-4 task">
+                        <div>
+                            <hr>
+                        </div>
+                        <p>REFORMULAR LA RELACIÓN ENTRE GOBIERNO Y CIUDADANÍA</p></div>
                 </div>
             </div>
         </div>
@@ -68,8 +77,8 @@
     <div class="text-center">
         <h3>Proyectos Abiertos</h3>
     </div>
-    <div class="col-xs-12 proyectos">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+    <div class="proyectos">
+        <div class="proyecto">
             <a href="https://mapaton.org/" target="_blank">
                 <div class="box">
                     <div class="box-content">
@@ -86,7 +95,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <div class="proyecto">
             <a href="http://www.informebajolupa.mx/" target="_blank">
                 <div class="box">
                     <div class="box-content">
@@ -103,7 +112,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 margen-respo">
+        <div class="proyecto">
             <a href="http://datamx.io/" target="_blank">
                 <div class="box">
                     <div class="box-content">
@@ -120,7 +129,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 margen-respo">
+        <div class="proyecto">
             <a href="https://codeandomexico.org/retos/">
                 <div class="box">
                     <div class="box-content">
@@ -134,124 +143,143 @@
     </div>
 </div>
 
-<!-- Section: Proyectos -->
-<div class="container">
+<!-- Section: Participa -->
+<div id="participa" class="container">
     <div class="text-center">
         <h3 class="other-margin-top">Participa</h3>
     </div>
-    <div class="col-xs-12 participacion">
-        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-            <div class="user">
+    <div class="participacion">
+        <div class="ejemplo-de-participacion">
+            <div class="icon-participacion">
                 <%= image_tag('participa1.png', class: 'img-circle') %>
             </div>
-        </div>
-        <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
-            <h3 class="text-bold">Involúcrate</h3>
-            <ul>
-                <li><span></span>Organiza o asiste a una noche de hacking cívico.</li>
-                <li class="active"><span class="active"></span>Documenta un proyecto  &lt;<a href="https://github.com/CodeandoMexico" target="_blank">Github</a>&gt;</li>
-                <li><span></span>Identifica un problema en tu comunidad. &lt;<a href="https://codeandomexico.org/lanza-un-reto">Formulario</a>&gt;</li>
-            </ul>
-        </div>
-        <div class="clearfix"></div><br>
-        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-            <div class="user">
-                <%= image_tag('participa2.png', class: 'img-circle') %>
+            <div class="texto-participacion">
+                <h3 class="text-bold titulo-participacion">Involúcrate</h3>
+                <ul>
+                    <li><span></span>Organiza o asiste a una noche de hacking cívico.</li>
+                    <li class="active"><span class="active"></span>Documenta un
+                        proyecto &lt;<a href="https://github.com/CodeandoMexico" target="_blank">Github</a>&gt;
+                    </li>
+                    <li><span></span>Identifica un problema en tu
+                        comunidad. &lt;<a href="https://codeandomexico.org/lanza-un-reto">Formulario</a>&gt;
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
-            <h3 class="text-bold">Construye</h3>
-            <ul>
-                <li><span></span>Abre un conjunto de datos &lt;<a href="http://datamx.io/" target="_blank">Datamx</a>&gt;</li>
-                <li><span></span>Contribuye a un proyecto existente  &lt;<a href="https://github.com/CodeandoMexico" target="_blank">Github</a>&gt;</li>
-                <li><span></span>Propón un proyecto nuevo &lt;<a href="https://codeandomexico.org/lanza-un-reto">Formulario</a>&gt;</li>
-            </ul>
+        <div class="ejemplo-de-participacion">
+            <div class="icon-participacion">
+                <%= image_tag('participa2.png', class: 'img-circle') %>
+            </div>
+            <div class="texto-participacion">
+                <h3 class="text-bold titulo-participacion">Construye</h3>
+                <ul>
+                    <li><span></span>Abre un conjunto de datos &lt;<a href="http://datamx.io/" target="_blank">Datamx</a>&gt;
+                    </li>
+                    <li><span></span>Contribuye a un proyecto
+                        existente &lt;<a href="https://github.com/CodeandoMexico" target="_blank">Github</a>&gt;
+                    </li>
+                    <li><span></span>Propón un proyecto
+                        nuevo &lt;<a href="https://codeandomexico.org/lanza-un-reto">Formulario</a>&gt;
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Section: Hackers -->
-<section class="container-hackers ">
-    <div class="col-xs-12 no-padding">
-        <div class="col-md-6 izq no-padding container-fluid">
-            <h2>HACKERS CONSTRUYENDO UN MEJOR PAÍS</h2>
-            <h3>Somos una comunidad abierta y orientada a la acción. Colaboramos en la construcción herramientas que resuelvan problemas públicos y sociales.</h3>
-            <h4>MISIÓN _</h4>
-            <p>Desarrollar tecnología para <span>construir un mejor país.</span></p>
+<section id="hackers" class="container-hackers ">
+    <div class="hackers-sections">
+        <div class="left-hackers-section">
+            <div class="hackers-title">HACKERS CONSTRUYENDO UN MEJOR PAÍS</div>
+            <div class="hackers-text">Somos una comunidad abierta y orientada a la acción. Colaboramos en la
+                construcción herramientas que resuelvan problemas públicos y sociales.
+            </div>
+            <span class="hackers-text-emphasis-large">MISIÓN _</span>
+            <p class="bottom-hackers-text">
+                Desarrollar tecnología para
+                <span class="hackers-text-emphasis-small">construir un mejor país.</span>
+            </p>
         </div>
-        <div class="col-md-6 der no-padding"></div>
+        <div class="right-hackers-section der no-padding"></div>
     </div>
 </section>
 
 <!-- Section: Propósito -->
-<div class="container">
+<div id="proposito" class="container">
     <div class="text-center proposito">
         <h3 class="other-margin-top">Nuestro propósito</h3>
-        <p>Codeando México es una comunidad tecnológica que busca desarrollar tecnología para construir un mejor país de manera abierta y colaborativa.</p>
+        <p class="proposito-text">
+            Codeando México es una comunidad tecnológica que busca desarrollar tecnología para construir un mejor país
+            de manera abierta y colaborativa.
+        </p>
         <a href="https://codeandomexico.org/registrate" class="btn unete">Únete</a>
         <h4 class="text-bold">Creemos en el potencial de la tecnología para:</h4>
-            <ul class="no-point">
-                <li>&lt;<span class="circulo"> RESOLVER PROBLEMAS PÚBLICOS Y SOCIALES </span>&gt;</li>
-                <li>&lt;<span class="circulo change-color"> GENERAR NUEVAS FORMAS DE PARTICIPACIÓN CÍVICA </span>&gt;</li>
-                <li>&lt;<span class="circulo"> REFORMULAR LA RELACIÓN ENTRE GOBIERNO Y CIUDADANÍA </span>&gt;</li>
-            </ul>
+        <ul class="no-point">
+            <li>&lt;<span class="circulo"> RESOLVER PROBLEMAS PÚBLICOS Y SOCIALES </span>&gt;</li>
+            <li>&lt;<span class="circulo change-color"> GENERAR NUEVAS FORMAS DE PARTICIPACIÓN CÍVICA </span>&gt;</li>
+            <li>&lt;<span class="circulo"> REFORMULAR LA RELACIÓN ENTRE GOBIERNO Y CIUDADANÍA </span>&gt;</li>
+        </ul>
     </div>
 </div>
 
 <!-- Section: Newsletter -->
-<section class="container-newsletter">
-    <div class="container">
-        <div class="text-center newsletter">
-            <h3 class="other-margin-top">Newsletter</h3>
-            <p>¿Te interesa conocer más de nosotros? Suscríbete a nuestro boletín mensual &lt;<span class="color-red">equipo@codeandomexico.org</span>&gt;</p>
-            <div class="container-form">
-                <form action="#">
-                    <div class="input-group">
-                        <input class="btn" name="email" id="email" type="email" placeholder="E-mail" required>
-                        <button class="btn btn-info" type="submit">¡Suscríbete!</button>
-                    </div>
-                </form>
-            </div>
+<section id="newsletter" class="container container-newsletter">
+    <div class="text-center newsletter">
+        <h3 class="other-margin-top">Newsletter</h3>
+        <p class="newsletter-text">¿Te interesa conocer más de nosotros? Suscríbete a nuestro boletín
+            mensual &lt;<span class="color-red">equipo@codeandomexico.org</span>&gt;</p>
+        <div class="container-form">
+            <form action="#">
+                <div class="input-group">
+                    <input class="btn" name="email" id="email" type="email" placeholder="E-mail" required>
+                    <button class="btn btn-info" type="submit">¡Suscríbete!</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
 <!-- Footer -->
 <footer>
-    <div class="container">
+    <div class="container footer-top-container">
         <div class="navbar-header">
             <a class="navbar-brand" href="https://codeandomexico.org"><%= image_tag('logo.png') %></a>
             <div class="menu-bottom">
                 <ul>
-                    <li>Proyectos abiertos</li>
-                    <li>Participa</li>
-                    <li>Comunidad</li>
-                    <li>Nuestro propósito</li>
-                    <li>Newsletter</li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#proyectos-codeando'>Proyectos abiertos</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#participa'>Participa</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#hackers'>Comunidad</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#proposito'>Nuestro propósito</a></li>
+                    <li class='navbar-button'><a class='navbar-button-label' href='#newsletter'>Newsletter</a></li>
                 </ul>
             </div>
         </div>
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="facebook">
+            <ul class="nav navbar-nav navbar-right navbar-social-icons">
+                <li class="navbar-button navbar-social-button">
                     <a href="https://www.facebook.com/CodeandoMexico/" target="_blank">
-                        <%= image_tag('face.png', class: 'img-circle') %>
+                        <%= image_tag('face.png', class: 'navbar-button-icon') %>
+                        <div class='navbar-button-label'>Facebook</div>
                     </a>
-                    <span>Facebook</span>
                 </li>
-                <li class="twitter">
+                <li class="navbar-button navbar-social-button">
                     <a href="https://twitter.com/codeandomexico" target="_blank">
-                        <%= image_tag('twitter.png', class: 'img-circle') %>
+                        <%= image_tag('twitter.png', class: 'navbar-button-icon') %>
+                        <div class='navbar-button-label'>Twitter</div>
                     </a>
-                    <span>Twitter</span>
                 </li>
-                <li class="github">
+                <li class="navbar-button navbar-social-button">
                     <a href="https://github.com/CodeandoMexico" target="_blank">
-                        <%= image_tag('github.png', class: 'img-circle') %>
+                        <%= image_tag('github.png', class: 'navbar-button-icon') %>
+                        <div class='navbar-button-label'>Github</div>
                     </a>
-                    <span>Github</span>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
-        <p class="text-left ajuste-texto-2">2017 | Creado por la comunidad de <a href="http://codeandoxalapa.org/" target="_blank">Codeando Xalapa</a> con <span class="glyphicon glyphicon-heart color-green"></span>.</p>
     </div><!--/.container -->
+    <p class="text-left ajuste-texto-2">
+        2017 | Creado por la comunidad de
+        <a href="http://codeandoxalapa.org/" target="_blank">Codeando Xalapa</a>
+        con <span class="glyphicon glyphicon-heart color-green"></span>.
+    </p>
 </footer>
