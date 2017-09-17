@@ -13,5 +13,8 @@
 !/log/.keep
 !/tmp/.keep
 
+/.idea/*
+/vendor/bundle/*
+
 # Ignore Byebug command history file.
 .byebug_history
